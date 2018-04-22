@@ -1,0 +1,10 @@
+<ul id="messages">
+  <li *ngFor="let message of messages">
+    {{message }}
+  </li>
+</ul>
+<form action="">
+    <input id="m" name="message" autocomplete="off" 
+      [(ngModel)]="message" (enter)="sendMessage()"/>
+    <button (click)="sendMessage()">Send</button>
+</form>
